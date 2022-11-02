@@ -7,3 +7,5 @@ keymap.set('n','<C-a>',':vsplit . <Return>',{silent = true})
 keymap.set('n','<S-a>',':split . <Return>',{silent = true})
 --Opening Files in TABS
 keymap.set('n','<S-t>',':tabedit . <Return>',{silent = true})
+--Switching Between Tabs
+keymap.set('n','<Tab>',':tabnext <Return>',{silent = true})

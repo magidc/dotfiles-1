@@ -16,3 +16,5 @@ vim.opt.smartcase = false
 vim.opt.swapfile = false --Disabling Creation Of SwapFiles
 vim.opt.updatetime = 300
 vim.opt.writebackup = false
+vim.g.loaded_netrwPlugin = 1
+vim.g.loaded_netrw = 1

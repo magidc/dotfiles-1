@@ -29,7 +29,12 @@ packer.startup(function(use)
 		'nvim-telescope/telescope.nvim', tag = '0.1.0', --Telescope
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
+	use 'nvim-telescope/telescope-file-browser.nvim' --Telescope File Browser Extension
 	use 'akinsho/bufferline.nvim' --BufferLine For Tabs
+    use { --Treesitter For Syntax Highlighting
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
 end)
 
 --Plugins Setup
@@ -37,3 +42,4 @@ require('packer-plugins/tokyonight')
 require('packer-plugins/lualine')
 require('packer-plugins/telescope')
 require('packer-plugins/bufferline')
+require('packer-plugins/treesitter')
