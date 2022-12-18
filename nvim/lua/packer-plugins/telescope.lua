@@ -21,13 +21,21 @@ telescope.setup{
 			theme = 'dropdown',
 			hijack_netrw = true,
 			previewer = false,
+			mappings = {
+				["i"] = { --Insert Mode
+					["<C-n>"] = fb_actions.create, --Creating New Files
+				},
+				["n"] = { --Normal Mode
+					["<C-n>"] = fb_actions.create, --Creating New Files
+				}
+			}
 		}
 	}
 }
 
 telescope.load_extension("file_browser")
 
-vim.keymap.set('n', 'ff',
+vim.keymap.set('n', ';f',
   function()
     builtin.find_files()
   end)

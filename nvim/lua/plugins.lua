@@ -19,7 +19,11 @@ packer.init{
 --Plugins
 packer.startup(function(use)
 	use 'wbthomason/packer.nvim' --Packer Itself
-	use 'folke/tokyonight.nvim' --TokyoNight Colorscheme
+	use { --ColorSchemes
+		'folke/tokyonight.nvim', --TokyoNight
+		'navarasu/onedark.nvim', --OneDark
+		'cpea2506/one_monokai.nvim', --OneMonokai
+	}
 	use 'kyazdani42/nvim-web-devicons' --Web Dev Icons
 	use {
 		'nvim-lualine/lualine.nvim', -- LuaLine As The StatusLine
@@ -38,7 +42,8 @@ packer.startup(function(use)
 end)
 
 --Plugins Setup
-require('packer-plugins/tokyonight')
+require('packer-plugins/colorschemes/tokyonight')
+require('packer-plugins/colorschemes/onedark')
 require('packer-plugins/lualine')
 require('packer-plugins/telescope')
 require('packer-plugins/bufferline')
