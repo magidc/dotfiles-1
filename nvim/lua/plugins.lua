@@ -39,6 +39,10 @@ packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+	use { --Code-Runner For Compiling And Running Code
+		'CRAG666/code_runner.nvim',
+		requires = {'nvim-lua/plenary.nvim'}
+	}
 end)
 
 --Plugins Setup
@@ -48,3 +52,4 @@ require('packer-plugins/lualine')
 require('packer-plugins/telescope')
 require('packer-plugins/bufferline')
 require('packer-plugins/treesitter')
+require('packer-plugins/code_runner')

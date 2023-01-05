@@ -11,3 +11,5 @@ keymap.set('n','<S-t>',':tabedit . <Return>',{silent = true})
 keymap.set('n','<Tab>',':tabnext <Return>',{silent = true})
 --Switching To Previous TAB
 keymap.set('n','<S-Tab>',':tabprevious <Return>',{silent = true})
+--Running Code With Code-Runner
+keymap.set('n',';q',':RunCode <Return>',{silent = true})
