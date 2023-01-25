@@ -21,6 +21,7 @@ packer.startup(function(use)
 	use 'wbthomason/packer.nvim' --Packer Itself
 	use { --ColorSchemes
 		'folke/tokyonight.nvim', --TokyoNight
+		"ellisonleao/gruvbox.nvim", --Gruvbox
 		'navarasu/onedark.nvim', --OneDark
 		'cpea2506/one_monokai.nvim', --OneMonokai
 	}
@@ -47,7 +48,9 @@ end)
 
 --Plugins Setup
 require('packer-plugins/colorschemes/tokyonight')
+require('packer-plugins/colorschemes/gruvbox')
 require('packer-plugins/colorschemes/onedark')
+require('packer-plugins/colorschemes/onemonokai')
 require('packer-plugins/lualine')
 require('packer-plugins/telescope')
 require('packer-plugins/bufferline')
