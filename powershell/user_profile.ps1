@@ -8,3 +8,6 @@ $env:XDG_CONFIG_HOME = "$HOME/.config"
 Set-Alias open explorer
 Set-Alias touch New-Item
 Set-Alias rm Remove-Item
+
+#Terminal Icons Setup
+Import-Module -Name Terminal-Icons

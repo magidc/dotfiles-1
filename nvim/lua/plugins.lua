@@ -44,6 +44,12 @@ packer.startup(function(use)
 		'CRAG666/code_runner.nvim',
 		requires = {'nvim-lua/plenary.nvim'}
 	}
+	use { --Langage Server Protocol; LSP
+		'williamboman/mason.nvim',
+		'williamboman/mason-lspconfig.nvim',
+		'neovim/nvim-lspconfig',
+		"glepnir/lspsaga.nvim",
+	}
 end)
 
 --Plugins Setup
@@ -53,6 +59,7 @@ require('packer-plugins/colorschemes/onedark')
 require('packer-plugins/colorschemes/onemonokai')
 require('packer-plugins/lualine')
 require('packer-plugins/telescope')
-require('packer-plugins/bufferline')
 require('packer-plugins/treesitter')
+require('packer-plugins/bufferline')
 require('packer-plugins/code_runner')
+require('packer-plugins/lsp')

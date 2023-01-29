@@ -7,7 +7,7 @@ end
 --Treesitter Setup
 ts.setup{
 	ensure_installed = {
-		"lua","html","css","javascript","python","java"
+		"lua","help","c","vim","html","css","javascript","python","java","markdown"
 	},
 	highlight = {
 		enable = true

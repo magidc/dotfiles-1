@@ -1,17 +1,12 @@
 --Ensuring Telescope Is Working
 local status,telescope = pcall(require,'telescope')
-if (not status) then 
+if (not status) then
 	print("Telescope Is Not Working")
 	return
 end
 
 --Telescope Setup
-local actions = require('telescope.actions')
 local builtin = require("telescope.builtin")
-
-local function telescope_buffer_dir()
-  return vim.fn.expand('%:p:h')
-end
 
 local fb_actions = require "telescope".extensions.file_browser.actions
 
